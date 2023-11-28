@@ -1,5 +1,15 @@
+import { Provider } from 'react-redux';
+import { Counter } from './components/Counter';
+import store from './store/store';
+
 function App() {
-  return <h1>Hello</h1>;
+  return (
+    <div className="App">
+      <Provider store={store}>
+        <Counter />
+      </Provider>
+    </div>
+  );
 }
 
 export default App;
