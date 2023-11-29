@@ -17,7 +17,7 @@ export const counterSlice = createSlice({
   },
 });
 
-export const { increment, decrement } = counterSlice.actions;
+export const { increment, decrement } = counterSlice.actions; // recucer mea type pass krte the wo ye h mtlb sb method access yahan se hga counterSlice.action se
 
 const counterReducer = counterSlice.reducer;
 export default counterReducer;
